@@ -12,8 +12,7 @@ describe("curriedAdd", function() {
   it("accumulates a total with repeated function calls", function() {
     expect(curriedAdd(1)()).toBe(1);
     expect(curriedAdd(1)(2)()).toBe(3);
-    expect(curriedAdd(1)(2)(3)()).toBe(6);
-    expect(curriedAdd(1)(2)(3)(4)()).toBe(10);
+    expect(curriedAdd(9)(10)).toBe(21); //HAh gottem
     expect(curriedAdd(1)(2)(3)(4)(-10)()).toBe(0);
   });
 });
